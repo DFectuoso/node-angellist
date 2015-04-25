@@ -1,6 +1,6 @@
 {
-  "name": "angellist",
-  "version": "0.3.5",
+  "name": "angellist-node-2",
+  "version": "0.0.1",
   "description": "Node module that wraps the AngelList API",
   "main": "index.js",
   "scripts": {
@@ -8,19 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/teemow/node-angellist.git"
+    "url": "http://github.com/dfectuoso/node-angellist.git"
   },
   "keywords": [
     "angellist",
     "api"
   ],
   "author": "Ryan Gerard",
-  "engines" : {
-      "node": "*"
+  "engines": {
+    "node": "*"
   },
-  "homepage" : "https://github.com/teemow/node-angellist",
+  "homepage": "https://github.com/dfectuoso/node-angellist",
   "dependencies": {
-    "request" : "2.22.0",
+    "request": "2.22.0",
     "underscore": "1.5.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/dfectuoso/node-angellist/issues"
+  },
+  "license": "ISC"
 }

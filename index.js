@@ -165,7 +165,7 @@ var api = {
     });
   },
   requestAccessToken: function(code, callback) {
-    return createPostRequest(createUrl('/api/oauth/token', {
+    return post(createUrl('/api/oauth/token', {
       client_id: config.clientID,
       client_secret: config.secret,
       code: code,
@@ -206,4 +206,3 @@ _.each(api_schema, function(routes, method) {
 });
 
 module.exports = api;
-

@@ -1,6 +1,6 @@
 {
   "name": "angellist-node-2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node module that wraps the AngelList API",
   "main": "index.js",
   "scripts": {

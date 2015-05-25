@@ -17,8 +17,8 @@ module.exports = {
 
     {name: "Users", path: "/users/:id", placeholder: ["id"], optional: ["include_details"]},
     {name: "UsersRoles", path: "/users/:id/roles", placeholder: ["id"]},
-    {name: "UsersBatch", path: "/users", required: ["ids"]},
-    {name: "UsersSearch", path: "/users", optional: ["slug", "md5"]},
+    {name: "UsersBatch", path: "/users/batch", required: ["ids"]},
+    {name: "UsersSearch", path: "/users/search", optional: ["slug", "md5"]},
     {name: "Me", path: "/me", auth: true},
 
     {name: "UsersFollowers", path: "/users/:id/followers", placeholder: ["id"]},

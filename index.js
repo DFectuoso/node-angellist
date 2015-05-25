@@ -154,6 +154,9 @@ var api = {
       }
     }
   },
+  disconnect: function(){
+    client.quit();
+  },
   setAccessToken: function(token) {
     config.access_token = token;
   },

@@ -148,7 +148,11 @@ var api = {
     if (cache) {
       config.cache = cache.timeout || 86400;
       var redis = require("redis");
-      client = redis.createClient(cache.port, cache.host, cache.options);
+      if (cache.url) {
+        client = redis.createClient(cache.url, cache.options);
+      } else {
+        client = redis.createClient(cache.port, cache.host, cache.options);
+      }
       if (cache.auth) {
         client.auth(cache.auth);
       }
